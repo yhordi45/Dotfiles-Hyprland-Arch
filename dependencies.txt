@@ -1,0 +1,33 @@
+# --- LISTA DE PAQUETES NECESARIOS (Arch Linux) ---
+
+# Entorno Base
+hyprland          # Compositor Wayland (gestor de ventanas)
+kitty             # Terminal
+waybar            # Barra de estado
+rofi-wayland      # Lanzador de aplicaciones (versión Wayland)
+swww              # Fondo de pantalla
+wlogout           # Menú de salida (apagar, reiniciar, etc.)
+swaync            # Centro de notificaciones (SwayNotificationCenter)
+
+# Audio
+pamixer           # Control de volumen por terminal
+pavucontrol       # Control de volumen gráfico
+
+# Sistema y utilidades
+polkit-gnome      # Autenticación gráfica
+brightnessctl     # Control de brillo
+grim              # Captura de pantalla (toma la imagen)
+slurp             # Captura de pantalla (selecciona el área)
+wl-clipboard      # Copiar/pegar Wayland
+cliphist          # Historial del portapapeles
+
+# Visualizador de audio
+cava              # Barras de audio en terminal
+
+# Fuentes y extras
+unzip
+ttf-font-awesome
+ttf-jetbrains-mono-nerd # Fuente Nerd Font de repos oficiales
+
+# --- OPCIONALES ---
+# playerctl        # Control multimedia (Play/Pause, siguiente, etc.)
