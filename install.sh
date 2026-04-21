@@ -4,7 +4,8 @@ echo "🚀 Iniciando instalación de Dotfiles Hyprland para Arch Linux..."
 
 # 1. Instalar paquetes necesarios
 echo "📦 Instalando paquetes desde repositorios oficiales..."
-sudo pacman -S --needed --noconfirm hyprland waybar rofi-wayland kitty swww pamixer \
+# Usamos -Sy para actualizar la base de datos de paquetes y evitar que falten paquetes como waybar
+sudo pacman -Sy --needed --noconfirm hyprland waybar rofi-wayland kitty swww pamixer \
     cava cliphist wl-clipboard swaync \
     brightnessctl grim slurp \
     pavucontrol polkit-gnome unzip ttf-font-awesome ttf-jetbrains-mono-nerd \
