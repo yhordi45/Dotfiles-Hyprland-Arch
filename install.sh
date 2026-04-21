@@ -14,6 +14,11 @@ sudo pacman -Sy --needed --noconfirm hyprland waybar rofi-wayland kitty swww pam
 # 2. Copiar configuraciones
 echo "📂 Copiando archivos de configuración..."
 mkdir -p ~/.config/hypr
+
+echo "🖼️  Preparando wallpapers..."
+mkdir -p ~/Documentos/wallpapers-hyprland
+cp -r Wallpapers-hyprland/* ~/Documentos/wallpapers-hyprland/ 2>/dev/null || true
+
 mkdir -p ~/.config/waybar
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/kitty
@@ -32,4 +37,4 @@ echo "🔑 Dando permisos a scripts..."
 chmod +x ~/.config/hypr/scripts/*.sh
 
 echo "✅ ¡Instalación completada! Ahora puedes reiniciar o iniciar Hyprland."
-echo "ℹ️  Nota: Recuerda poner tu imagen 'wallpaper.jpg' en ~/.config/hypr/ (o la ruta que hayas configurado)."
+echo "ℹ️  Nota: Tus wallpapers se copiaron a ~/Documentos/wallpapers-hyprland. Presiona SUPER + W para elegirlos."
